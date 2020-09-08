@@ -1,0 +1,28 @@
+@tailwind base;
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Write your own custom base styles here */
+
+* {
+  font-family: 'Raleway', sans-serif;
+  outline: none !important;
+}
+
+.fab {
+  display: flex !important;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* ESTILO VEM AQUI */
+.bg-color {
+  background-color: rgb(10, 10, 10);
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
