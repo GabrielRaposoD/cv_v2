@@ -1,3 +1,5 @@
 export { Hero } from './Hero'
 export { Header } from './Header'
 export { Contact } from './Contact'
+export { Title } from './Title'
+export { About } from './About'

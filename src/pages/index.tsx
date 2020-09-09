@@ -1,4 +1,4 @@
-import { Hero, Header, Contact } from '../components'
+import { Hero, Header, Contact, About } from '../components'
 import Head from 'next/head'
 
 export default function Index() {
@@ -9,9 +9,10 @@ export default function Index() {
       </Head>
       <div>
         <div className="bg-color min-h-screen">
-          <Contact />
           {/* <Header />
-          <Hero /> */}
+          <Hero />
+          <Contact /> */}
+          <About />
         </div>
       </div>
     </>
