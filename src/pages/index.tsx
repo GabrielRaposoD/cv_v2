@@ -1,4 +1,11 @@
-import { Hero, Header, Contact, About, Services } from '../components'
+import {
+  Hero,
+  Header,
+  Contact,
+  About,
+  Services,
+  Portfolio,
+} from '../components'
 import Head from 'next/head'
 
 export default function Index() {
@@ -10,10 +17,11 @@ export default function Index() {
       <div>
         <div className="bg-color min-h-screen">
           {/* <Header />
-          <Hero />
-          <Contact /> */}
+          <Hero /> */}
+          {/* <Contact /> */}
           {/* <About /> */}
-          <Services />
+          {/* <Services /> */}
+          <Portfolio />
         </div>
       </div>
     </>
