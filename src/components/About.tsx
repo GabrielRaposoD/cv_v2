@@ -2,16 +2,17 @@ import { Title } from './'
 
 export function About() {
   return (
-    <section className="container pt-16 mx-auto">
+    <section className="xl:px-0 md:pb-0 container px-6 pt-16 pb-8 mx-auto">
       <Title subtitle="Get to know me" title="About Me" />
 
-      <div className="flex flex-row space-x-20">
+      <div className="md:flex-row lg:space-x-20 md:space-x-2 flex flex-col items-center">
         <img
           src="/images/placeholder.png"
           alt=""
-          className="w-4/12 border-4 border-gray-900 border-opacity-25 rounded"
+          className="xl:w-4/12 md:rounded md:w-6/12 md:h-auto md:mb-0 object-cover w-40 h-40 mb-12 border-4 border-gray-900 border-opacity-25 rounded-full"
         />
-        <div className="w-1/2">
+
+        <div className="md:w-1/2">
           <div className="pb-8 mb-8 border-b-2 border-gray-500 border-opacity-25">
             <h5 className="text-primary-500 mb-2 text-2xl font-semibold">
               Who am i?
@@ -27,8 +28,8 @@ export function About() {
               me prioritize tasks, iterate fast and deliver faster.
             </p>
           </div>
-          <div className="flex flex-row justify-between mb-8 text-gray-200">
-            <div className="flex flex-col space-y-2">
+          <div className="md:flex-row md:space-y-0 flex flex-col justify-between mb-8 space-y-2 text-gray-200">
+            <div className=" flex flex-col space-y-2">
               <p className="font-semibold">
                 Name
                 <span className="ml-4 font-normal text-gray-500 opacity-75">

@@ -48,6 +48,15 @@
   background-color: rgb(15, 15, 15);
 }
 
+.main-dropdown {
+  max-height: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-dropdown.main-dropdown-open {
+  max-height: 400px;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

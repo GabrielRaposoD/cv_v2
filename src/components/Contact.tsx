@@ -2,14 +2,14 @@ import { Title } from './'
 
 export function Contact() {
   return (
-    <section className="container pt-16 mx-auto">
+    <section className="xl:px-0 container px-6 pt-16 pb-8 mx-auto">
       <Title
         title="Get in Touch"
         subtitle="Feel free to contact whenever you want"
       />
 
-      <div className="justify-evenly flex flex-row w-full">
-        <form className="w-7/12">
+      <div className="justify-evenly md:flex-row flex flex-col w-full">
+        <form className="md:w-7/12 md:mb-0 mb-12">
           <h4 className="mb-6 text-xl font-semibold text-gray-200">
             Message Me
           </h4>
@@ -44,7 +44,7 @@ export function Contact() {
             </button>
           </div>
         </form>
-        <div className="w-4/12">
+        <div className="md:w-4/12">
           <h4 className="mb-5 text-xl font-semibold text-gray-200">
             Contact Info
           </h4>

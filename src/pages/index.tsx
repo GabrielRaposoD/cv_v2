@@ -16,12 +16,12 @@ export default function Index() {
       </Head>
       <div>
         <div className="bg-color min-h-screen">
-          {/* <Header />
-          <Hero /> */}
+          <Header />
+          <Hero />
           {/* <Contact /> */}
           {/* <About /> */}
           {/* <Services /> */}
-          <Portfolio />
+          {/* <Portfolio /> */}
         </div>
       </div>
     </>

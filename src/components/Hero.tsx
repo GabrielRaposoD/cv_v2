@@ -1,8 +1,8 @@
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen">
+    <section className=" relative flex min-h-screen">
       <div className="flex flex-col items-end justify-center w-full px-20">
-        <div className="space-y-12">
+        <div className="md:mr-0 -mr-4 space-y-12">
           <h1 className=" text-6xl font-bold leading-tight text-left text-white">
             PROGRESS SHOULD <br />{' '}
             <span className="text-primary-500">NEVER </span>
