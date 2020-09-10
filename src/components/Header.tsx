@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import cs from 'classnames'
+import { usePage } from '../context/pageContext'
 
 export function Header() {
   const [isOpen, setOpen] = useState<boolean>(false)
+  const { setPage } = usePage()
 
   return (
     <div className="fixed z-10 w-full border-b border-gray-900 border-opacity-75">
@@ -22,14 +24,30 @@ export function Header() {
         </div>
 
         <div className="md:flex-row md:space-x-12 md:space-y-0 md:w-auto bg-color md:bg-transparent md:flex items-center hidden w-full space-y-6 text-gray-200">
-          <button className="linker md:py-0 py-6 font-semibold">About</button>
-          <button className="linker md:py-0 py-6 font-semibold">
+          <button
+            onClick={() => setPage('about')}
+            className="linker md:py-0 py-6 font-semibold"
+          >
+            About
+          </button>
+          <button
+            onClick={() => setPage('portfolio')}
+            className="linker md:py-0 py-6 font-semibold"
+          >
             Portfolio
           </button>
-          <button className="linker md:py-0 py-6 font-semibold">
+          <button
+            onClick={() => setPage('services')}
+            className="linker md:py-0 py-6 font-semibold"
+          >
             Services
           </button>
-          <button className="linker md:py-0 py-6 font-semibold">Contact</button>
+          <button
+            onClick={() => setPage('contact')}
+            className="linker md:py-0 py-6 font-semibold"
+          >
+            Contact
+          </button>
         </div>
 
         <div
@@ -40,10 +58,30 @@ export function Header() {
             }
           )}
         >
-          <button className=" md:py-0 py-6 font-semibold">About</button>
-          <button className=" md:py-0 py-6 font-semibold">Portfolio</button>
-          <button className=" md:py-0 py-6 font-semibold">Services</button>
-          <button className=" md:py-0 py-6 font-semibold">Contact</button>
+          <button
+            onClick={() => setPage('about')}
+            className=" md:py-0 py-6 font-semibold"
+          >
+            About
+          </button>
+          <button
+            onClick={() => setPage('portfolio')}
+            className=" md:py-0 py-6 font-semibold"
+          >
+            Portfolio
+          </button>
+          <button
+            onClick={() => setPage('services')}
+            className=" md:py-0 py-6 font-semibold"
+          >
+            Services
+          </button>
+          <button
+            onClick={() => setPage('contact')}
+            className=" md:py-0 py-6 font-semibold"
+          >
+            Contact
+          </button>
         </div>
       </div>
     </div>

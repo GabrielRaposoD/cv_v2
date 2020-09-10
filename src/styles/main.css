@@ -57,6 +57,16 @@
   max-height: 400px;
 }
 
+.transition-screen {
+  left: -100%;
+
+  transition: all 2s ease-in-out;
+}
+
+.transition-screen.active {
+  left: 100%;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
