@@ -3,7 +3,7 @@ export function Hero() {
     <section className="relative flex min-h-screen">
       <div className="md:px-20 flex flex-col items-end justify-center w-full px-5">
         <div className="md:mr-0 -mr-4 space-y-12">
-          <h1 className=" text-6xl font-bold leading-tight text-left text-white">
+          <h1 className=" md:text-6xl text-3xl font-bold leading-tight text-left text-white">
             PROGRESS SHOULD <br />{' '}
             <span className="text-primary-500">NEVER </span>
             BE KEPT <br /> WAITING
