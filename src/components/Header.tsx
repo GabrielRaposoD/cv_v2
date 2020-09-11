@@ -51,6 +51,7 @@ export function Header() {
         </div>
 
         <div
+          onClick={() => setOpen(false)}
           className={cs(
             'md:flex-row md:space-x-12 md:space-y-0 md:w-auto main-dropdown flex flex-col items-center w-full space-y-6 text-gray-200 bg-color md:bg-transparent overflow-hidden md:hidden',
             {

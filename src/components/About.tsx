@@ -1,8 +1,14 @@
 import { Title } from './'
+import { usePage } from '../context/pageContext'
+import cs from 'classnames'
 
 export function About() {
   return (
-    <section className="xl:px-0 md:pb-0 container px-6 pt-16 pb-8 mx-auto">
+    <section
+      className={cs(
+        'xl:px-0 md:pb-0 container px-6 pt-16 pb-8 mx-auto relative min-h-screen'
+      )}
+    >
       <Title subtitle="Get to know me" title="About Me" />
 
       <div className="md:flex-row lg:space-x-20 md:space-x-2 flex flex-col items-center">

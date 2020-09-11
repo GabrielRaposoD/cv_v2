@@ -21,7 +21,7 @@ export default function Index() {
       <div className="relative max-w-full overflow-hidden">
         <div
           className={cs(
-            'transition-screen absolute z-50 w-full h-screen overflow-hidden bg-black',
+            'transition-screen fixed  z-50 w-full h-screen overflow-hidden bg-black',
             {
               active: !(page === 'hero'),
             }
@@ -29,23 +29,62 @@ export default function Index() {
         ></div>
 
         <div
-          className={cs('absolute text-white text-4xl pr-10 pt-10 right-0', {
-            hidden: page === 'hero',
-          })}
+          className={cs(
+            'absolute text-white text-4xl pr-10 pt-10 right-0 z-40',
+            {
+              'page-closed': page === 'hero',
+              'page-opened': page !== 'hero',
+            }
+          )}
         >
           <i
             onClick={() => setPage('hero')}
-            className="fa fa-times relative z-40 transition-all duration-1000 ease-in-out cursor-pointer"
+            className="fa fa-times page relative z-40 cursor-pointer"
           />
         </div>
 
         <div className="bg-color min-h-screen">
-          <Header />
-          <Hero />
-          {/* <Contact /> */}
-          {/* <About /> */}
-          {/* <Services /> */}
-          {/* <Portfolio /> */}
+          <div
+            className={cs({
+              'page-opened': page === 'hero',
+              'page-closed': page !== 'hero',
+            })}
+          >
+            <Header />
+            <Hero />
+          </div>
+          <div
+            className={cs({
+              'page-opened': page === 'contact',
+              'page-closed': page !== 'contact',
+            })}
+          >
+            <Contact />
+          </div>
+          <div
+            className={cs({
+              'page-opened': page === 'about',
+              'page-closed': page !== 'about',
+            })}
+          >
+            <About />
+          </div>
+          <div
+            className={cs({
+              'page-opened': page === 'services',
+              'page-closed': page !== 'services',
+            })}
+          >
+            <Services />
+          </div>
+          <div
+            className={cs({
+              'page-opened': page === 'portfolio',
+              'page-closed': page !== 'portfolio',
+            })}
+          >
+            <Portfolio />
+          </div>
         </div>
       </div>
     </>
