@@ -66,18 +66,21 @@ export function About() {
           </div>
           <div className="flex flex-row space-x-10 text-2xl text-gray-200">
             <a
+              aria-label="github"
               href="https://github.com/GabrielRaposoD"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
               <i className="fab fa-github-alt"></i>
             </a>
             <a
+              aria-label="linkedin"
               href="https://www.linkedin.com/in/gabrielrraposo/"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
               <i className="fab fa-linkedin-in "></i>
             </a>
             <a
+              aria-label="instagram"
               href="instagram.com/gabrielrraposo"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
