@@ -8,6 +8,15 @@ export function Portfolio() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   }
 
   return (
@@ -25,8 +34,8 @@ export function Portfolio() {
           desksrc="/images/site1.png"
         />
         <PortfolioItem
-          title="This Site"
-          desc="My personal site"
+          title="Pokedex"
+          desc="A simple pokedex"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
@@ -34,8 +43,8 @@ export function Portfolio() {
           desksrc="/images/site2.png"
         />
         <PortfolioItem
-          title="This Site"
-          desc="My personal site"
+          title="MG LUBE"
+          desc="A prototype site for the MGLUBE group"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
@@ -43,8 +52,8 @@ export function Portfolio() {
           desksrc="/images/site3.png"
         />
         <PortfolioItem
-          title="This Site"
-          desc="My personal site"
+          title="My Old Portfolio"
+          desc="My old personal site"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"

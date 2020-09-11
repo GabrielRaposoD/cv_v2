@@ -70,7 +70,7 @@
 .page-closed {
   position: relative;
   animation: opacitychange2 1.3s forwards;
-  opacity: 0;
+
   height: 0;
   z-index: 20;
 }
@@ -78,7 +78,7 @@
 .page-opened {
   position: relative;
   animation: opacitychange 1.3s;
-  opacity: 1;
+
   height: auto;
   z-index: 30;
 }
@@ -175,6 +175,21 @@
 }
 
 /* Slider arrows */
+
+.slick-prev::before,
+.slick-next:before {
+  font-family: 'Font Awesome 5 Free' !important;
+  font-weight: 900 !important;
+  color: white !important;
+}
+
+.slick-prev::before {
+  content: '\f053' !important;
+}
+
+.slick-next:before {
+  content: '\f054' !important;
+}
 
 /* Start purging... */
 @tailwind utilities;
