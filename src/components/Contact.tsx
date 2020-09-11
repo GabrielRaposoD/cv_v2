@@ -15,11 +15,13 @@ export function Contact() {
           </h4>
           <div className=" flex w-full mb-4 space-x-6">
             <input
+              aria-label="name"
               className="focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
               placeholder="Your Name"
               type="text"
             />
             <input
+              aria-label="email"
               className="focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
               placeholder="Your Email"
               type="email"
@@ -27,6 +29,7 @@ export function Contact() {
           </div>
           <div className="w-full mb-4">
             <input
+              aria-label="subject"
               className="focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
               placeholder="The Subject"
               type="subject"
@@ -34,6 +37,7 @@ export function Contact() {
           </div>
           <div className=" w-full mb-4">
             <textarea
+              aria-label="message"
               className="focus:outline-none focus:border-primary-500 w-full h-40 px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
               placeholder="Your Message"
             ></textarea>

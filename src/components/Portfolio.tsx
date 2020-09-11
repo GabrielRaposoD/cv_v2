@@ -31,7 +31,7 @@ export function Portfolio() {
           framework="TailwindCSS"
           date="2020"
           mobsrc={require('../assets/site1-mobile.png')}
-          desksrc={require('../assets/site1.png')}
+          desksrc={require('../assets/site1.png?resize&size=1224')}
         />
         <PortfolioItem
           title="Pokedex"
@@ -40,7 +40,7 @@ export function Portfolio() {
           framework="TailwindCSS"
           date="2020"
           mobsrc={require('../assets/site2-mobile.png')}
-          desksrc={require('../assets/site2.png')}
+          desksrc={require('../assets/site2.png?resize&size=1224')}
         />
         <PortfolioItem
           title="MG LUBE"
@@ -49,7 +49,7 @@ export function Portfolio() {
           framework="TailwindCSS"
           date="2020"
           mobsrc={require('../assets/site3-mobile.png')}
-          desksrc={require('../assets/site3.png')}
+          desksrc={require('../assets/site3.png?resize&size=1224')}
         />
         <PortfolioItem
           title="My Old Portfolio"
@@ -58,7 +58,7 @@ export function Portfolio() {
           framework="TailwindCSS"
           date="2020"
           mobsrc={require('../assets/site4-mobile.png')}
-          desksrc={require('../assets/site4.png')}
+          desksrc={require('../assets/site4.png?resize&size=1224')}
         />
       </Slider>
     </section>
