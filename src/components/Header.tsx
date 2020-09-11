@@ -13,7 +13,7 @@ export function Header() {
         <div className="md:justify-start md:px-0 md:py-0 flex flex-row items-center justify-between px-6 py-6">
           {/* <img src="/images/fox.png" alt="" className="h-8 mr-4" /> */}
           <img src="/images/logo.png" alt="" className=" h-16" />
-          <button onClick={() => setOpen(i => !i)}>
+          <button className="md:hidden" onClick={() => setOpen(i => !i)}>
             <i
               className={cs('text-2xl text-white flex md:hidden', {
                 'fa fa-bars': !isOpen,
