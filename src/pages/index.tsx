@@ -17,6 +17,7 @@ export default function Index() {
     <>
       <Head>
         <title>Gabriel Raposo</title>
+        <link rel="shortcut icon" href="/favicon-16x16.png" />
       </Head>
       <div className="relative max-w-full overflow-hidden">
         <div
