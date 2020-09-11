@@ -12,6 +12,10 @@
   display: flex !important;
 }
 
+body {
+  background-color: rgb(15, 15, 15);
+}
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
