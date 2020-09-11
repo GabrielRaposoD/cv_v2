@@ -11,14 +11,14 @@ export function About() {
     >
       <Title subtitle="Get to know me" title="About Me" />
 
-      <div className="md:flex-row lg:space-x-20 md:space-x-2 relative z-0 flex flex-col items-center">
+      <div className="md:flex-row lg:space-x-20 md:space-x-2 flex flex-col items-center">
         <img
           src={require('../assets/placeholder.png')}
           alt=""
           className="xl:w-4/12 md:rounded md:w-6/12 md:h-auto md:mb-0 object-cover w-40 h-40 mb-12 border-4 border-gray-900 border-opacity-25 rounded-full"
         />
 
-        <div className="md:w-1/2 relative z-10">
+        <div className="md:w-1/2">
           <div className="pb-8 mb-8 border-b-2 border-gray-500 border-opacity-25">
             <h5 className="text-primary-500 mb-2 text-2xl font-semibold">
               Who am i?

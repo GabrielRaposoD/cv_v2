@@ -13,7 +13,7 @@ export function Hero() {
             I'm <span className="text-primary-500">Gabriel Raposo, </span>a
             Fullstack Developer and Freelancer. <br /> Let's work together!
           </p>
-          <div className="flex flex-row space-x-10 text-3xl text-gray-200">
+          <div className="relative z-10 flex flex-row space-x-10 text-3xl text-gray-200">
             <a
               aria-label="github"
               href="https://github.com/GabrielRaposoD"
@@ -41,7 +41,7 @@ export function Hero() {
       <img
         src={require('../assets/fox-bg.png')}
         alt=""
-        className="absolute bottom-0 left-0 opacity-25"
+        className="absolute bottom-0 left-0 z-0 opacity-25"
       />
     </section>
   )
