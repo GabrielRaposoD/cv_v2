@@ -6,12 +6,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-br">
         <Head>
           <title>
-            <link
-              rel="icon"
-              type="image/png"
-              sizes="16x16"
-              href="/favicon-16x16.png"
-            />
+            <link rel="shortcut icon" href="/favicon-16x16.png" />
             <meta name="theme-color" content="#7D2D88"></meta>
           </title>
         </Head>

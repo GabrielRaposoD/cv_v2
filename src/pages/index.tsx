@@ -9,16 +9,24 @@ import {
 import Head from 'next/head'
 import { usePage } from '../context/pageContext'
 import cs from 'classnames'
+import { NextSeo } from 'next-seo'
 
 export default function Index() {
   const { page, setPage } = usePage()
 
   return (
     <>
-      <Head>
-        <title>Gabriel Raposo</title>
-        <link rel="shortcut icon" href="/favicon-16x16.png" />
-      </Head>
+      <NextSeo
+        title="Gabriel raposo"
+        description="Portfolio"
+        openGraph={{
+          url: 'gabrielraposo.com.br',
+          title: 'Gabriel Raposo',
+          description: 'Gabriel Raposo Portfolio',
+          site_name: 'Gabriel Raposo',
+        }}
+      />
+
       <div className="relative max-w-full overflow-hidden">
         <div
           className={cs(

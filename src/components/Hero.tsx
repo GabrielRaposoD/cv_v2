@@ -36,7 +36,7 @@ export function Hero() {
         </div>
       </div>
       <img
-        src="/images/fox-bg.png"
+        src={require('../assets/fox-bg.png')}
         alt=""
         className="absolute bottom-0 left-0 opacity-25"
       />

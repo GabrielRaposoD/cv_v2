@@ -30,8 +30,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc="/images/site1-mobile.png"
-          desksrc="/images/site1.png"
+          mobsrc={require('../assets/site1-mobile.png')}
+          desksrc={require('../assets/site1.png')}
         />
         <PortfolioItem
           title="Pokedex"
@@ -39,8 +39,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc="/images/site2-mobile.png"
-          desksrc="/images/site2.png"
+          mobsrc={require('../assets/site2-mobile.png')}
+          desksrc={require('../assets/site2.png')}
         />
         <PortfolioItem
           title="MG LUBE"
@@ -48,8 +48,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc="/images/site3-mobile.png"
-          desksrc="/images/site3.png"
+          mobsrc={require('../assets/site3-mobile.png')}
+          desksrc={require('../assets/site3.png')}
         />
         <PortfolioItem
           title="My Old Portfolio"
@@ -57,8 +57,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc="/images/site4-mobile.png"
-          desksrc="/images/site4.png"
+          mobsrc={require('../assets/site4-mobile.png')}
+          desksrc={require('../assets/site4.png')}
         />
       </Slider>
     </section>
