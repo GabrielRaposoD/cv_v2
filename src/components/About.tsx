@@ -81,7 +81,7 @@ export function About() {
             </a>
             <a
               aria-label="instagram"
-              href="instagram.com/gabrielrraposo"
+              href="https://www.instagram.com/gabrielrraposo"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
               <i className="fab fa-instagram"></i>
