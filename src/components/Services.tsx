@@ -13,12 +13,12 @@ export function Services() {
         />
         <ServiceItem
           img={require('../assets/browser-page-account.png')}
-          text="Creating your website is more than a service, it's a pleasure. What unique experience can I develope for you today?"
+          text="Creating your website is more than a service, it's a pleasure. What unique experience can I develop for you today?"
           title="Web Design"
         />
         <ServiceItem
           img={require('../assets/programming-laptop-type.png')}
-          text="Knowing your client is the most powerfull weapon you have in market today. How can we start improving your clients UX?"
+          text="Knowing your client is the most powerful weapon you have in market today. How can we start improving your clients UX?"
           title="User Experience"
         />
         <ServiceItem
