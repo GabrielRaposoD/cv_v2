@@ -18,7 +18,7 @@ export function Services() {
         />
         <ServiceItem
           img={require('../assets/programming-laptop-type.png')}
-          text="Knowing your client is the most powerful weapon you have in market today. How can we start improving your clients UX?"
+          text="We believe that knowing your client creates a powerful synergy for your project. We are detail oriented. How can we start improving your clients UX?"
           title="User Experience"
         />
         <ServiceItem
