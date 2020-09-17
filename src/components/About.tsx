@@ -28,10 +28,11 @@ export function About() {
             </h4>
             <p className="leading-relaxed text-gray-500 opacity-75">
               I am a freelancer based in Brazil and I have been working as a
-              developer for a year now, which comply with the latest techs
-              trends. I help convert a vision and an idea into meaningful and
-              useful products. Having a sharp eye for product development helps
-              me prioritize tasks, iterate fast and deliver faster.
+              developer for a year. I diligently keep track of the latest techs
+              trends, so I can help convert your vision or idea into a
+              meaningful and useful product. Having a sharp eye for product
+              development helps me prioritize tasks, iterate quickly, and
+              deliver faster.
             </p>
           </div>
           <div className="md:flex-row md:space-y-0 flex flex-col justify-between mb-8 space-y-2 text-gray-200">
