@@ -16,17 +16,6 @@ export default function Index() {
 
   return (
     <>
-      <NextSeo
-        title="Gabriel raposo"
-        description="Portfolio"
-        openGraph={{
-          url: 'gabrielraposo.com.br',
-          title: 'Gabriel Raposo',
-          description: 'Gabriel Raposo Portfolio',
-          site_name: 'Gabriel Raposo',
-        }}
-      />
-
       <div className="relative max-w-full overflow-hidden">
         <div
           className={cs(

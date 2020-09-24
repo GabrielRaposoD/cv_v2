@@ -5,14 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-          <title>
-            <link rel="shortcut icon" href="/favicon-16x16.png" />
-            <meta name="theme-color" content="#7D2D88"></meta>
-            <meta
-              name="google-site-verification"
-              content="sQ1wS05xP3n4P-pjtm1Adu82IBzsK4eaborVV8qjmyM"
-            />
-          </title>
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
