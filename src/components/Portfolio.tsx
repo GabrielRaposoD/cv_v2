@@ -27,7 +27,7 @@ export function Portfolio() {
         <PortfolioItem
           title="Quartoo"
           uri="https://www.quartoo.com/"
-          desc="Room renting service"
+          desc="Quartoo is a room renting service avaliable in Brazil"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
@@ -37,7 +37,7 @@ export function Portfolio() {
         <PortfolioItem
           title="This Site"
           uri="https://gabrielraposo.com.br"
-          desc="Quartoo is a room renting service avaliable in Brazil"
+          desc="This is my portfolio!"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
