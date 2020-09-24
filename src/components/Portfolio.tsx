@@ -25,8 +25,19 @@ export function Portfolio() {
 
       <Slider {...settings}>
         <PortfolioItem
+          title="Quartoo"
+          uri="https://www.quartoo.com/"
+          desc="Room renting service"
+          languages="Html / CSS / JS"
+          framework="TailwindCSS"
+          date="2020"
+          mobsrc={require('../assets/site5-mobile.png')}
+          desksrc={require('../assets/site5.png?resize&size=1224')}
+        />
+        <PortfolioItem
           title="This Site"
-          desc="My personal site"
+          uri="https://gabrielraposo.com.br"
+          desc="Quartoo is a room renting service avaliable in Brazil"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
@@ -35,6 +46,7 @@ export function Portfolio() {
         />
         <PortfolioItem
           title="Pokedex"
+          uri="#"
           desc="A simple pokedex"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
@@ -44,6 +56,7 @@ export function Portfolio() {
         />
         <PortfolioItem
           title="MG LUBE"
+          uri="#"
           desc="A prototype site for the MGLUBE group"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
@@ -53,7 +66,8 @@ export function Portfolio() {
         />
         <PortfolioItem
           title="My Old Portfolio"
-          desc="My old personal site"
+          uri="#"
+          desc="Another portfolio"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"

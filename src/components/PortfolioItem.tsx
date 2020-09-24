@@ -6,6 +6,7 @@ export function PortfolioItem({
   date,
   desksrc,
   mobsrc,
+  uri,
 }) {
   return (
     <div className="flex flex-col justify-center px-5 py-6 mx-2 bg-gray-700 bg-opacity-25 rounded-sm">
@@ -15,7 +16,7 @@ export function PortfolioItem({
             className="text-primary-500 border-primary-500 mb-5 text-4xl font-bold border-b-4 border-r-2 border-opacity-50 border-solid rounded-b-full rounded-r-full"
             style={{ width: 'max-content' }}
           >
-            {title}
+            <a href={uri}>{title}</a>
           </h3>
         </div>
 
