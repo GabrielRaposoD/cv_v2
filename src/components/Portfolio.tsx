@@ -45,14 +45,14 @@ export function Portfolio() {
           desksrc={require('../assets/site1.png?resize&size=1224')}
         />
         <PortfolioItem
-          title="Pokedex"
-          uri="#"
-          desc="A simple pokedex"
+          title="ExSign"
+          uri="https://exsign.studio/"
+          desc="A Web Designers team focused in bringing a unique experience"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site2-mobile.png')}
-          desksrc={require('../assets/site2.png?resize&size=1224')}
+          mobsrc={require('../assets/site6-mobile.png')}
+          desksrc={require('../assets/site6.png?resize&size=1224')}
         />
         <PortfolioItem
           title="MG LUBE"
@@ -63,6 +63,16 @@ export function Portfolio() {
           date="2020"
           mobsrc={require('../assets/site3-mobile.png')}
           desksrc={require('../assets/site3.png?resize&size=1224')}
+        />
+        <PortfolioItem
+          title="Pokedex"
+          uri="#"
+          desc="A simple pokedex"
+          languages="Html / CSS / JS"
+          framework="TailwindCSS"
+          date="2020"
+          mobsrc={require('../assets/site2-mobile.png')}
+          desksrc={require('../assets/site2.png?resize&size=1224')}
         />
         <PortfolioItem
           title="My Old Portfolio"
