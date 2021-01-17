@@ -19,16 +19,19 @@
     "lqip-loader": "^2.2.0",
     "next": "^10.0.0",
     "next-google-fonts": "^1.2.1",
+    "next-images": "^1.4.1",
     "next-optimized-images": "^2.6.2",
     "next-seo": "^4.7.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.1.0",
     "react-slick": "^0.27.11",
-    "responsive-loader": "^2.1.1",
+    "responsive-loader": "2.0.0",
+    "sharp": "^0.27.0",
     "slick-carousel": "^1.8.1",
     "svg-sprite-loader": "^5.0.0",
-    "webp-loader": "^0.6.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",

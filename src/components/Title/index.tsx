@@ -1,4 +1,9 @@
-export function Title({ subtitle, title }) {
+interface TitleProps {
+  subtitle: string
+  title: string
+}
+
+const Title: React.FC<TitleProps> = ({ subtitle, title }: TitleProps) => {
   return (
     <div className="flex flex-col items-center w-full mb-24 space-y-1">
       <p className="text-sm font-medium text-gray-500 opacity-75">{subtitle}</p>
@@ -10,3 +15,5 @@ export function Title({ subtitle, title }) {
     </div>
   )
 }
+
+export default Title

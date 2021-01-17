@@ -1,8 +1,7 @@
-import { Title } from './'
-import { usePage } from '../context/pageContext'
+import { Title } from '..'
 import cs from 'classnames'
 
-export function About() {
+const About: React.FC = () => {
   return (
     <section
       className={cs(
@@ -13,7 +12,7 @@ export function About() {
 
       <div className="md:flex-row lg:space-x-20 md:space-x-2 flex flex-col items-center">
         <img
-          src={require('../assets/placeholder.png')}
+          src={require('@assets/placeholder.png')}
           alt=""
           className="xl:w-4/12 md:rounded md:w-6/12 md:h-auto md:mb-0 object-cover w-40 h-40 mb-12 border-4 border-gray-900 border-opacity-25 rounded-full"
         />
@@ -93,3 +92,5 @@ export function About() {
     </section>
   )
 }
+
+export default About

@@ -1,4 +1,4 @@
-export function Hero() {
+const Hero: React.FC = () => {
   return (
     <section className="relative flex min-h-screen">
       <div className="md:px-20 flex flex-col items-end justify-center w-full px-5">
@@ -39,10 +39,12 @@ export function Hero() {
         </div>
       </div>
       <img
-        src={require('../assets/fox-bg.png')}
+        src={require('@assets/fox-bg.png')}
         alt=""
         className="absolute bottom-0 left-0 z-0 opacity-25"
       />
     </section>
   )
 }
+
+export default Hero

@@ -1,8 +1,8 @@
 import { useState } from 'react'
+import { usePage } from '@context/pageContext'
 import cs from 'classnames'
-import { usePage } from '../context/pageContext'
 
-export function Header() {
+const Header: React.FC = () => {
   const [isOpen, setOpen] = useState<boolean>(false)
   const { setPage } = usePage()
 
@@ -12,7 +12,7 @@ export function Header() {
       <div className="md:flex-row md:w-auto md:px-20 md:py-6 flex flex-col justify-between w-full mx-auto bg-transparent">
         <div className="md:justify-start md:px-0 md:py-0 flex flex-row items-center justify-between px-6 py-6">
           {/* <img src="/images/fox.png" alt="" className="h-8 mr-4" /> */}
-          <img src={require('../assets/logo.png')} alt="" className=" h-16" />
+          <img src={require('@assets/logo.png')} alt="" className=" h-16" />
           <button className="md:hidden" onClick={() => setOpen(i => !i)}>
             <i
               className={cs('text-2xl text-white flex md:hidden', {
@@ -88,3 +88,5 @@ export function Header() {
     </div>
   )
 }
+
+export default Header

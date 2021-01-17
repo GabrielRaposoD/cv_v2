@@ -1,7 +1,7 @@
-import { Title, PortfolioItem } from './'
+import { Title, PortfolioItem } from '@components/index'
 import Slider from 'react-slick'
 
-export function Portfolio() {
+const Portfolio: React.FC<any> = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -31,8 +31,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site5-mobile.png')}
-          desksrc={require('../assets/site5.png?resize&size=1224')}
+          mobsrc={require('@assets/site5-mobile.png')}
+          desksrc={require('@assets/site5.png?resize&size=1224')}
         />
         <PortfolioItem
           title="This Site"
@@ -41,8 +41,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site1-mobile.png')}
-          desksrc={require('../assets/site1.png?resize&size=1224')}
+          mobsrc={require('@assets/site1-mobile.png')}
+          desksrc={require('@assets/site1.png?resize&size=1224')}
         />
         <PortfolioItem
           title="ExSign"
@@ -51,8 +51,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site6-mobile.png')}
-          desksrc={require('../assets/site6.png?resize&size=1224')}
+          mobsrc={require('@assets/site6-mobile.png')}
+          desksrc={require('@assets/site6.png?resize&size=1224')}
         />
         <PortfolioItem
           title="MG LUBE"
@@ -61,8 +61,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site3-mobile.png')}
-          desksrc={require('../assets/site3.png?resize&size=1224')}
+          mobsrc={require('@assets/site3-mobile.png')}
+          desksrc={require('@assets/site3.png?resize&size=1224')}
         />
         <PortfolioItem
           title="Pokedex"
@@ -71,8 +71,8 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site2-mobile.png')}
-          desksrc={require('../assets/site2.png?resize&size=1224')}
+          mobsrc={require('@assets/site2-mobile.png')}
+          desksrc={require('@assets/site2.png?resize&size=1224')}
         />
         <PortfolioItem
           title="My Old Portfolio"
@@ -81,10 +81,12 @@ export function Portfolio() {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('../assets/site4-mobile.png')}
-          desksrc={require('../assets/site4.png?resize&size=1224')}
+          mobsrc={require('@assets/site4-mobile.png')}
+          desksrc={require('@assets/site4.png?resize&size=1224')}
         />
       </Slider>
     </section>
   )
 }
+
+export default Portfolio

@@ -1,6 +1,6 @@
-import { Title } from './'
+import { Title } from '@components/index'
 
-export function Contact() {
+const Contact: React.FC = () => {
   return (
     <section className="xl:px-0 container px-6 pt-16 pb-8 mx-auto">
       <Title
@@ -93,3 +93,5 @@ export function Contact() {
     </section>
   )
 }
+
+export default Contact

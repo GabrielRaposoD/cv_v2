@@ -1,4 +1,15 @@
-export function PortfolioItem({
+interface PortfolioItemProps {
+  title: string
+  desc: string
+  languages: string
+  framework: string
+  date: string
+  desksrc: string
+  mobsrc: string
+  uri: string
+}
+
+const PortfolioItem: React.FC<PortfolioItemProps> = ({
   title,
   desc,
   languages,
@@ -7,7 +18,7 @@ export function PortfolioItem({
   desksrc,
   mobsrc,
   uri,
-}) {
+}: PortfolioItemProps) => {
   return (
     <div className="flex flex-col justify-center px-5 py-6 mx-2 bg-gray-700 bg-opacity-25 rounded-sm">
       <div className=" md:flex-row flex flex-col justify-between">
@@ -51,3 +62,5 @@ export function PortfolioItem({
     </div>
   )
 }
+
+export default PortfolioItem

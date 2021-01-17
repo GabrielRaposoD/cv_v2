@@ -6,10 +6,8 @@ import {
   Services,
   Portfolio,
 } from '../components'
-import Head from 'next/head'
 import { usePage } from '../context/pageContext'
 import cs from 'classnames'
-import { NextSeo } from 'next-seo'
 
 export default function Index() {
   const { page, setPage } = usePage()
