@@ -5,7 +5,7 @@ const Services: React.FC = () => {
     <section className="xl:px-0 container px-6 pt-16 pb-8 mx-auto">
       <Title title="My Services" subtitle="Need help?" />
 
-      <div className="xl:grid-cols-3 md:grid-cols-2 grid grid-flow-row grid-cols-1 gap-10">
+      <div className="xl:grid-cols-3 md:grid-cols-2 grid grid-flow-row grid-cols-1 gap-8">
         <ServiceItem
           img={require('@assets/programming-browser-1.png')}
           text="Using the best tecnology saves you the budget for spending with meaninfull things. How can we use our best tecnology to help you?"

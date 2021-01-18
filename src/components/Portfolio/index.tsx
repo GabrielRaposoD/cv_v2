@@ -20,7 +20,7 @@ const Portfolio: React.FC<any> = () => {
   }
 
   return (
-    <section className="xl:px-0 container px-6 pt-16 pb-8 mx-auto">
+    <section className="xl:px-0 container px-6 pb-8 mx-auto mt-8">
       <Title title="Portfolio" subtitle="See some of my work" />
 
       <Slider {...settings}>
@@ -31,18 +31,18 @@ const Portfolio: React.FC<any> = () => {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('@assets/site5-mobile.png')}
-          desksrc={require('@assets/site5.png?resize&size=1224')}
+          mobsrc={require('@assets/site5-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site5.png?resize&size=1600')}
         />
         <PortfolioItem
           title="This Site"
           uri="https://gabrielraposo.com.br"
-          desc="This is my portfolio!"
+          desc="This is my portfolio made with next.js, framer motion and tailwind"
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('@assets/site1-mobile.png')}
-          desksrc={require('@assets/site1.png?resize&size=1224')}
+          mobsrc={require('@assets/site1-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site1.png?resize&size=1600')}
         />
         <PortfolioItem
           title="ExSign"
@@ -51,8 +51,8 @@ const Portfolio: React.FC<any> = () => {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('@assets/site6-mobile.png')}
-          desksrc={require('@assets/site6.png?resize&size=1224')}
+          mobsrc={require('@assets/site6-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site6.png?resize&size=1600')}
         />
         <PortfolioItem
           title="MG LUBE"
@@ -61,28 +61,8 @@ const Portfolio: React.FC<any> = () => {
           languages="Html / CSS / JS"
           framework="TailwindCSS"
           date="2020"
-          mobsrc={require('@assets/site3-mobile.png')}
-          desksrc={require('@assets/site3.png?resize&size=1224')}
-        />
-        <PortfolioItem
-          title="Pokedex"
-          uri="#"
-          desc="A simple pokedex"
-          languages="Html / CSS / JS"
-          framework="TailwindCSS"
-          date="2020"
-          mobsrc={require('@assets/site2-mobile.png')}
-          desksrc={require('@assets/site2.png?resize&size=1224')}
-        />
-        <PortfolioItem
-          title="My Old Portfolio"
-          uri="#"
-          desc="Another portfolio"
-          languages="Html / CSS / JS"
-          framework="TailwindCSS"
-          date="2020"
-          mobsrc={require('@assets/site4-mobile.png')}
-          desksrc={require('@assets/site4.png?resize&size=1224')}
+          mobsrc={require('@assets/site3-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site3.png?resize&size=1600')}
         />
       </Slider>
     </section>

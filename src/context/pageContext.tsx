@@ -3,12 +3,14 @@ import React, { useState, createContext } from 'react'
 const PageContext = createContext(null)
 
 export function PageProvider(props) {
-  const [page, setPage] = useState('hero')
+  const pages: string[] = ['About', 'Services', 'Portfolio', 'Contact']
+  const [page, setPage] = useState<string>('Hero')
 
   return (
     <PageContext.Provider
       value={{
         page,
+        pages,
         setPage,
       }}
       {...props}

@@ -1,4 +1,10 @@
 import { Title } from '@components/index'
+import {
+  FaLocationArrow,
+  FaPaperPlane,
+  FaPhone,
+  FaSignature,
+} from 'react-icons/fa'
 
 const Contact: React.FC = () => {
   return (
@@ -7,7 +13,6 @@ const Contact: React.FC = () => {
         title="Get in Touch"
         subtitle="Feel free to contact whenever you want"
       />
-
       <div className="justify-evenly md:flex-row flex flex-col w-full">
         <form className="md:w-7/12 md:mb-0 mb-12">
           <h4 className="mb-6 text-xl font-semibold text-gray-200">
@@ -58,10 +63,10 @@ const Contact: React.FC = () => {
           </p>
           <div className="flex flex-row">
             <div className="text-primary-500 flex flex-col w-2/12 space-y-12 text-3xl border-r-2 border-gray-500 border-opacity-25">
-              <i className="fas fa-signature mt-2" />
-              <i className="fas fa-location-arrow mt-2" />
-              <i className="fas fa-phone mt-2" />
-              <i className="fas fa-paper-plane mt-2" />
+              <FaSignature className="mt-2" />
+              <FaLocationArrow className="mt-2" />
+              <FaPhone className="mt-2" />
+              <FaPaperPlane className=" mt-2" />
             </div>
             <div className="flex flex-col ml-8 space-y-8 text-gray-200">
               <div>

@@ -19,6 +19,9 @@ body {
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+body {
+  overflow-x: hidden !important; /* Hide horizontal scrollbar */
+}
 
 /* Underlined animation */
 .linker {
@@ -174,23 +177,6 @@ body {
   .slick-slide img.mobile {
     display: none !important;
   }
-}
-
-/* Slider arrows */
-
-.slick-prev::before,
-.slick-next:before {
-  font-family: 'Font Awesome 5 Free' !important;
-  font-weight: 900 !important;
-  color: white !important;
-}
-
-.slick-prev::before {
-  content: '\f053' !important;
-}
-
-.slick-next:before {
-  content: '\f054' !important;
 }
 
 /* Start purging... */

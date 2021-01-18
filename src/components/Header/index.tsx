@@ -1,53 +1,33 @@
 import { useState } from 'react'
-import { usePage } from '@context/pageContext'
 import cs from 'classnames'
+import HeaderButton from '@components/HeaderButton'
+import { usePage } from '@context/pageContext'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Header: React.FC = () => {
   const [isOpen, setOpen] = useState<boolean>(false)
-  const { setPage } = usePage()
+  const { pages } = usePage()
 
   return (
     <div className="fixed z-10 w-full border-b border-gray-900 border-opacity-75">
-      <div className="bg-gradient-to-l from-primary-500 to-primary-900 h-1"></div>
+      <div className="bg-gradient-to-l from-primary-500 to-primary-900 h-1" />
       <div className="md:flex-row md:w-auto md:px-20 md:py-6 flex flex-col justify-between w-full mx-auto bg-transparent">
         <div className="md:justify-start md:px-0 md:py-0 flex flex-row items-center justify-between px-6 py-6">
           {/* <img src="/images/fox.png" alt="" className="h-8 mr-4" /> */}
           <img src={require('@assets/logo.png')} alt="" className=" h-16" />
           <button className="md:hidden" onClick={() => setOpen(i => !i)}>
-            <i
-              className={cs('text-2xl text-white flex md:hidden', {
-                'fa fa-bars': !isOpen,
-                'fa fa-times': isOpen,
-              })}
-            />
+            {isOpen ? (
+              <FaTimes className="md:hidden flex text-2xl text-white" />
+            ) : (
+              <FaBars className="md:hidden flex text-2xl text-white" />
+            )}
           </button>
         </div>
 
         <div className="md:flex-row md:space-x-12 md:space-y-0 md:w-auto bg-color md:bg-transparent md:flex items-center hidden w-full space-y-6 text-gray-200">
-          <button
-            onClick={() => setPage('about')}
-            className="linker md:py-0 py-6 font-semibold"
-          >
-            About
-          </button>
-          <button
-            onClick={() => setPage('portfolio')}
-            className="linker md:py-0 py-6 font-semibold"
-          >
-            Portfolio
-          </button>
-          <button
-            onClick={() => setPage('services')}
-            className="linker md:py-0 py-6 font-semibold"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => setPage('contact')}
-            className="linker md:py-0 py-6 font-semibold"
-          >
-            Contact
-          </button>
+          {pages.map(p => (
+            <HeaderButton page={p} key={p} />
+          ))}
         </div>
 
         <div
@@ -59,30 +39,9 @@ const Header: React.FC = () => {
             }
           )}
         >
-          <button
-            onClick={() => setPage('about')}
-            className=" md:py-0 py-6 font-semibold"
-          >
-            About
-          </button>
-          <button
-            onClick={() => setPage('portfolio')}
-            className=" md:py-0 py-6 font-semibold"
-          >
-            Portfolio
-          </button>
-          <button
-            onClick={() => setPage('services')}
-            className=" md:py-0 py-6 font-semibold"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => setPage('contact')}
-            className=" md:py-0 py-6 font-semibold"
-          >
-            Contact
-          </button>
+          {pages.map(p => (
+            <HeaderButton page={p} key={p} />
+          ))}
         </div>
       </div>
     </div>
