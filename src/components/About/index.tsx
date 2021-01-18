@@ -1,5 +1,6 @@
 import { Title } from '..'
 import cs from 'classnames'
+import { FaGitAlt, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
 const About: React.FC = () => {
   return (
@@ -70,21 +71,21 @@ const About: React.FC = () => {
               href="https://github.com/GabrielRaposoD"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
-              <i className="fab fa-github-alt"></i>
+              <FaGitAlt />
             </a>
             <a
               aria-label="linkedin"
               href="https://www.linkedin.com/in/gabrielrraposo/"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
-              <i className="fab fa-linkedin-in "></i>
+              <FaLinkedinIn />
             </a>
             <a
               aria-label="instagram"
               href="https://www.instagram.com/gabrielrraposo"
               className="hover:text-primary-500 transition-all duration-500 ease-in-out"
             >
-              <i className="fab fa-instagram"></i>
+              <FaInstagram />
             </a>
           </div>
         </div>
