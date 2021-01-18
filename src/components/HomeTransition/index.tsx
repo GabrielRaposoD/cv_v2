@@ -5,15 +5,17 @@ const HomeTransition: React.FC = ({ children }) => {
     <motion.div
       initial="pageInitial"
       animate="pageAnimate"
-      exit={{ x: 1000, opacity: 0 }}
-      transition={{ min: 0, max: 100, bounceDamping: 8 }}
+      transition={{ min: 0, max: 100, bounceDamping: 8, duration: 0.6 }}
       variants={{
         pageInitial: {
-          x: 1000,
+          width: '100%',
+          position: 'absolute',
+          left: 200,
           opacity: 0,
         },
         pageAnimate: {
-          x: 0,
+          position: 'absolute',
+          left: 0,
           opacity: 1,
         },
       }}
