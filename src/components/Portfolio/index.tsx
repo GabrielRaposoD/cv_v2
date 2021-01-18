@@ -20,7 +20,7 @@ const Portfolio: React.FC<any> = () => {
   }
 
   return (
-    <section className="xl:px-0 container px-6 pb-8 mx-auto mt-8">
+    <section className="xl:px-0 md:pb-0 container relative min-h-screen px-6 pt-16 pb-8 mx-auto">
       <Title title="Portfolio" subtitle="See some of my work" />
 
       <Slider {...settings}>

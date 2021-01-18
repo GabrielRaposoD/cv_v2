@@ -6,7 +6,7 @@ const BackButton: React.FC = () => {
   return (
     <FaTimes
       onClick={() => setPage('Hero')}
-      className="md:mt-10 md:mr-10 absolute right-0 mr-5 text-4xl text-white cursor-pointer"
+      className="md:mt-10 md:mr-10 absolute right-0 z-50 mt-5 mr-5 text-4xl text-white cursor-pointer"
     />
   )
 }

@@ -6,10 +6,6 @@
   outline: none !important;
 }
 
-.fab {
-  display: flex !important;
-}
-
 body {
   background-color: rgb(15, 15, 15);
 }
@@ -62,16 +58,6 @@ body {
   max-height: 400px;
 }
 
-.transition-screen {
-  animation: mymove2 1.3s;
-  left: -100%;
-}
-
-.transition-screen.active {
-  animation: mymove 1.3s;
-  left: 100%;
-}
-
 .page-closed {
   position: relative;
   animation: opacitychange2 1.3s forwards;
@@ -86,79 +72,6 @@ body {
 
   height: auto;
   z-index: 30;
-}
-
-@keyframes opacitychange2 {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-  }
-}
-
-@keyframes opacitychange {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes mymove {
-  0% {
-    left: -100%;
-  }
-  25% {
-    left: 0%;
-  }
-  50% {
-    left: 0%;
-  }
-  75% {
-    left: 100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-@keyframes mymove2 {
-  0% {
-    left: 100%;
-  }
-  25% {
-    left: 0%;
-  }
-  50% {
-    left: 0%;
-  }
-  75% {
-    left: -100%;
-  }
-  100% {
-    left: -100%;
-  }
 }
 
 .slick-slide img.desktop {

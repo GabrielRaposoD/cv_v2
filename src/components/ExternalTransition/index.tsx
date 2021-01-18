@@ -5,11 +5,11 @@ const ExternalTransition: React.FC = ({ children }) => {
     <motion.div
       initial="pageInitial"
       animate="pageAnimate"
-      exit={{ x: -300, opacity: 0 }}
-      transition={{ duration: 0.6 }}
+      exit={{ x: -1000, opacity: 0 }}
+      transition={{ min: 0, max: 100, bounceDamping: 8 }}
       variants={{
         pageInitial: {
-          x: 300,
+          x: -1000,
           opacity: 0,
         },
         pageAnimate: {
