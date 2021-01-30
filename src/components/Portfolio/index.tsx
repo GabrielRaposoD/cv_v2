@@ -85,6 +85,16 @@ const Portfolio: React.FC<any> = () => {
           mobsrc={require('@assets/site7-mobile.png?resize&size=300')}
           desksrc={require('@assets/site7.png?resize&size=1600')}
         />
+        <PortfolioItem
+          title="Shortener"
+          uri="https://shortener.gabrielraposo.com.br/"
+          desc="A simples url shortener project made with Nest & Next"
+          languages="Html / CSS / JS"
+          framework="TailwindCSS"
+          date="2021"
+          mobsrc={require('@assets/site8-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site8.png?resize&size=1600')}
+        />
       </Slider>
     </section>
   )
