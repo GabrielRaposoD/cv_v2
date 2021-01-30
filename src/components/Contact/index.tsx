@@ -1,3 +1,6 @@
+import { Formik, Form, Field } from 'formik'
+import * as Yup from 'yup'
+import cs from 'classnames'
 import { Title } from '@components/index'
 import {
   FaLocationArrow,
@@ -5,8 +8,24 @@ import {
   FaPhone,
   FaSignature,
 } from 'react-icons/fa'
+import { useState } from 'react'
+
+const validationSchema = Yup.object({
+  name: Yup.string()
+    .min(3, 'Name is too short')
+    .required('This field is required.'),
+  email: Yup.string().email().required('This field is required.'),
+  subject: Yup.string()
+    .min(5, 'Subject is too short')
+    .required('This field is required.'),
+  message: Yup.string()
+    .min(20, 'Message is too short')
+    .required('This field is required.'),
+})
 
 const Contact: React.FC = () => {
+  const [emailSent, setEmailSent] = useState<boolean>(false)
+
   return (
     <section className="xl:px-0 container px-6 pt-16 pb-8 mx-auto">
       <Title
@@ -14,45 +33,109 @@ const Contact: React.FC = () => {
         subtitle="Feel free to contact whenever you want"
       />
       <div className="justify-evenly md:flex-row flex flex-col w-full">
-        <form className="md:w-7/12 md:mb-0 mb-12">
-          <h4 className="mb-6 text-xl font-semibold text-gray-200">
-            Message Me
-          </h4>
-          <div className=" flex w-full mb-4 space-x-6">
-            <input
-              aria-label="name"
-              className="focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
-              placeholder="Your Name"
-              type="text"
-            />
-            <input
-              aria-label="email"
-              className="focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
-              placeholder="Your Email"
-              type="email"
-            />
-          </div>
-          <div className="w-full mb-4">
-            <input
-              aria-label="subject"
-              className="focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
-              placeholder="The Subject"
-              type="subject"
-            />
-          </div>
-          <div className=" w-full mb-4">
-            <textarea
-              aria-label="message"
-              className="focus:outline-none focus:border-primary-500 w-full h-40 px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <div className="">
-            <button className="focus:outline-none bg-primary-500 hover:bg-primary-700 flex px-8 py-4 text-white transition-all duration-500 ease-in-out border-0 rounded">
-              Send Message
-            </button>
-          </div>
-        </form>
+        <Formik
+          initialValues={{
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          }}
+          onSubmit={values => {
+            console.log(values.message)
+            fetch('api/email', {
+              body: JSON.stringify({
+                from: values.email,
+                subject: `${values.name} | ${values.subject}`,
+                message: values.message,
+              }),
+              method: 'POST',
+              headers: { 'Content-type': 'application/json' },
+            })
+            setEmailSent(true)
+          }}
+          validationSchema={validationSchema}
+        >
+          {({ errors, touched }) => (
+            <Form className="md:w-7/12 md:mb-0 mb-12">
+              <h4 className="mb-6 text-xl font-semibold text-gray-200">
+                Message Me
+              </h4>
+              <div className=" flex w-full mb-4 space-x-6">
+                <Field
+                  aria-label="name"
+                  id="name"
+                  name="name"
+                  className={cs(
+                    'focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm',
+                    {
+                      'border-red-500': errors.name && touched.name,
+                    }
+                  )}
+                  placeholder="Your Name"
+                  type="text"
+                />
+                <Field
+                  aria-label="email"
+                  id="email"
+                  name="email"
+                  className={cs(
+                    'focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm',
+                    {
+                      'border-red-500': errors.email && touched.email,
+                    }
+                  )}
+                  placeholder="Your Email"
+                  type="email"
+                />
+              </div>
+              <div className="w-full mb-4">
+                <Field
+                  aria-label="subject"
+                  id="subject"
+                  name="subject"
+                  className={cs(
+                    'focus:outline-none focus:border-primary-500 w-full px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm',
+                    {
+                      'border-red-500': errors.subject && touched.subject,
+                    }
+                  )}
+                  placeholder="The Subject"
+                  type="subject"
+                />
+              </div>
+              <div className=" w-full mb-4">
+                <Field
+                  component="textarea"
+                  id="message"
+                  name="message"
+                  aria-label="message"
+                  className={cs(
+                    'focus:outline-none focus:border-primary-500 w-full h-40 px-4 py-4 text-base text-gray-500 transition-all duration-300 ease-in-out bg-gray-900 bg-opacity-25 border-b-2 border-transparent border-solid rounded-sm',
+                    {
+                      'border-red-500': errors.message && touched.message,
+                    }
+                  )}
+                  placeholder="Your Message"
+                  error={errors.message}
+                />
+              </div>
+
+              <button
+                className="focus:outline-none bg-primary-500 hover:bg-primary-700 flex px-8 py-4 text-white transition-all duration-500 ease-in-out border-0 rounded"
+                type="submit"
+                disabled={emailSent}
+              >
+                Send Message
+              </button>
+
+              {emailSent && (
+                <p className="text-primary-500 mt-5 text-lg font-bold">
+                  E-mail sent with success!
+                </p>
+              )}
+            </Form>
+          )}
+        </Formik>
         <div className="md:w-4/12">
           <h4 className="mb-5 text-xl font-semibold text-gray-200">
             Contact Info

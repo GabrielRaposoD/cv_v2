@@ -64,6 +64,27 @@ const Portfolio: React.FC<any> = () => {
           mobsrc={require('@assets/site3-mobile.png?resize&size=300')}
           desksrc={require('@assets/site3.png?resize&size=1600')}
         />
+        <PortfolioItem
+          title="AKIO"
+          uri="https://akio.gabrielraposo.com.br/"
+          desc="A restaurant mockup home page made with Next.js"
+          languages="Html / CSS / JS"
+          framework="TailwindCSS"
+          date="2020"
+          mobsrc={require('@assets/site2-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site2.png?resize&size=1600')}
+        />
+        <PortfolioItem
+          title="Impulso Bayer"
+          uri="https://bayer.chiligum.com.br/index.html"
+          desc="A SPA made with Next.js for Bayer 
+          publicity"
+          languages="Html / CSS / JS"
+          framework="TailwindCSS"
+          date="2021"
+          mobsrc={require('@assets/site7-mobile.png?resize&size=300')}
+          desksrc={require('@assets/site7.png?resize&size=1600')}
+        />
       </Slider>
     </section>
   )

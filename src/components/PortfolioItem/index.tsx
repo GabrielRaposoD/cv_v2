@@ -27,7 +27,9 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
             className="text-primary-500 border-primary-500 mb-5 text-4xl font-bold border-b-4 border-r-2 border-opacity-50 border-solid rounded-b-full rounded-r-full"
             style={{ width: 'max-content' }}
           >
-            <a href={uri}>{title}</a>
+            <a href={uri} target="_blank">
+              {title}
+            </a>
           </h3>
         </div>
 
